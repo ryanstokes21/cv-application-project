@@ -1,5 +1,5 @@
-import Form from './components/Form.jsx';
-import Resume from './components/Resume.jsx';
+import Form from './Form.jsx';
+import Resume from './Resume.jsx';
 import './App.css';
 import { useState } from 'react';
 
