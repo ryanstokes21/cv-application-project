@@ -1,4 +1,9 @@
-export default function Resume({ formData }) {
+export default function Resume({ formData, setFormData, setEditMode }) {
+  function handleClick() {
+    setFormData(formData);
+    setEditMode(true);
+  }
+
   return (
     <section>
       <div>
@@ -22,6 +27,10 @@ export default function Resume({ formData }) {
           {formData.dateFrom} to {formData.dateTo}
         </p>
       </div>
+
+      <button className="primary-btn" onClick={handleClick}>
+        Edit
+      </button>
     </section>
   );
 }
