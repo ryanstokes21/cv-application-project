@@ -1,6 +1,5 @@
-export default function Resume({ formData, setFormData, setEditMode }) {
+export default function Resume({ formData, setEditMode }) {
   function handleClick() {
-    setFormData(formData);
     setEditMode(true);
   }
 

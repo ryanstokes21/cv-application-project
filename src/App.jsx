@@ -24,12 +24,20 @@ function App() {
       {editMode ? (
         <section className="edit">
           <h1>Resume Form</h1>
-          <Form setEditMode={setEditMode} setFormData={setFormData} />
+          <Form
+            setEditMode={setEditMode}
+            setFormData={setFormData}
+            formData={formData}
+          />
         </section>
       ) : (
         <section className="resume">
           <h1>Resume</h1>
-          <Resume formData={formData} />
+          <Resume
+            formData={formData}
+            setFormData={setFormData}
+            setEditMode={setEditMode}
+          />
         </section>
       )}
     </>
